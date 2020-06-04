@@ -25,8 +25,9 @@
 			background-color:White;
 			height: 450px;
 			margin-top: 15px;
-			padding-top: 40px;
+			padding-top: 20px;
 			padding-left: 60px;
+			
 		}
 
 		#circle
@@ -77,29 +78,43 @@
 
 	<div class="col-6" >
 		<div class="row">
-			<div class="col-2" style="padding-top: 30px;">
-		       <label>Name</label>
-		       <label style="margin-top: 10px;">Gender</label>
-		       <label style="margin-top: 10px;">Phone</label>
-		       <label style="margin-top: 10px;">Email</label>
-		       <label style="margin-top: 10px;">Country</label>
-		       <label style="margin-top: 10px;">City</label>
-		       
-		    </div>
-		    <div class="col-3" style="padding-top: 30px; ">
-		    	<input type="text" name="text" >
-		    	<input type="text" name="text"style="margin-top: 10px;">
-		    	<input type="text" name="text"style="margin-top: 10px;">
-		    	<input type="text" name="text"style="margin-top: 10px;">
-		    	<input type="text" name="text"style="margin-top: 10px;">
-		    	<input type="text" name="text"style="margin-top: 10px;">
-		    </div>
-	    </div>
+			<div class="col-2" style="padding-top: 15px; margin:10px; " >
+		       <input type="text" placeholder="First name"  />
+			   
+			   <input type="radio" id="male" name="gender" value="male"/>
+               <label for="male" style="margin:10px">Male</label>
+			    <p style="margin:10px"> Birthday:</p> 
+			   <p style="margin:10px">Country:</p> 
+			   <p style="margin:10px"> City:</p> 
+			   <input type="email" placeholder="Email"style="margin-top:10px; margin-bottom:10px;"/>
+			   
+			   
+			   <button style="width:100px; background-color:purple; color:white; margin-top:50px; margin-left:150px; ">Save</button>
+	    
+	    
 
-	    <button style="margin-left: 110px;" >Cancle</button>
-	    <button style="margin-left: 20px;"> Save</button>
-	</div>
+</div>
+<div class="col-3" style="padding-top: 15px;  margin:10px; margin-left:100px;">
+<input type="text" placeholder="Last name" />
+<input type="radio" id="female" name="gender" value="female" />
+  <label for="female" style="margin:10px">Female</label><br>
+  <input type="date" style="margin:5px" />
+  <select style="margin:5px">
+			            <option> Egypt </option>
+						<option> Oman </option>
+						<option> Saudi Arabia </option>
+			   </select>
+			   <select style="margin:10px">
+			            <option> Cairo </option>
+						<option> Muscat </option>
+						<option> Riyadh </option>
+			   </select>
+			   <input type="submit" value="validate"/>
+			   
+  
 
+</div>
+</div>
 </div>
 </body>
 </html>
